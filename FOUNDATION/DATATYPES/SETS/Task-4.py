@@ -21,7 +21,8 @@ dev_b = {
 
 
 
-tech_both = dev_a | dev_b
+tech_both = dev_a & dev_b
+
 print(f"The Technologies Both Dev Know :- {tech_both}")
 
 
@@ -76,7 +77,7 @@ else :
 
 # Print whether both developers know exactly the same technologies.
 
-if dev_a.issuperset(dev_b) == True:
+if dev_a == dev_b:
     print("Yes, both have identical skills.")
-else :
+else:
     print("No, their skill sets are different.")
